@@ -1,7 +1,13 @@
 const { app, BrowserWindow, ipcMain, dialog } = require("electron");
 const path = require("path");
+const { updateElectronApp } = require('update-electron-app')
+if (require('electron-squirrel-startup')) app.quit();
 
 
+
+updateElectronApp({
+  updateInterval: "20 minutes"
+})
 let win
 
 function createWindow() {

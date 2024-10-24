@@ -1,0 +1,1 @@
+# To update the app set a new release with the ".exe" and the ".nupkg" files.
