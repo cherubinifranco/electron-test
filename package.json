@@ -1,6 +1,6 @@
 {
   "name": "electron-test",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This is a test app for electron update",
   "main": "public/main.js",
   "build": {
