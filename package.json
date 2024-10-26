@@ -1,0 +1,32 @@
+{
+  "name": "electron-test",
+  "version": "1.0.0",
+  "description": "This is a test app for electron update",
+  "main": "public/main.js",
+  "build": {
+    "appId": "electron.test.app",
+    "productName": "Electron Autoupdater Test",
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "repository": "https://github.com/cherubinifranco/electron-test",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "release": "electron-builder"
+  },
+  "author": "Cherubini Franco",
+  "license": "ISC",
+  "dependencies": {
+    "electron-updater": "^6.3.9"
+  },
+  "devDependencies": {
+    "electron": "^33.0.2",
+    "electron-builder": "24.6.3"
+  }
+}
