@@ -1,6 +1,6 @@
 {
   "name": "electron-test",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This is a test app for electron update",
   "main": "public/main.js",
   "build": {
@@ -11,7 +11,10 @@
     }
   },
   "repository": "https://github.com/cherubinifranco/electron-test",
-  "publish": "never",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
