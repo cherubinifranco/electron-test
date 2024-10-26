@@ -11,14 +11,11 @@
     }
   },
   "repository": "https://github.com/cherubinifranco/electron-test",
-  "publish": {
-    "provider": "github",
-    "releaseType": "release"
-  },
+  "publish": "never",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "release": "electron-builder"
+    "dist": "electron-builder"
   },
   "author": "Cherubini Franco",
   "license": "ISC",
@@ -27,6 +24,6 @@
   },
   "devDependencies": {
     "electron": "^33.0.2",
-    "electron-builder": "24.6.3"
+    "electron-builder": "^25.1.8"
   }
 }
